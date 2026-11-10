@@ -1,0 +1,18 @@
+[project]
+name = "beancount-stack"
+version = "0.1.0"
+description = "Beancount v3 + Fava + statement importers and investment reports, as a container image"
+requires-python = ">=3.13"
+dependencies = [
+    "beancount==3.2.3",
+    "fava==1.30.16",
+    "beanquery==0.2.0",
+    "beangulp==0.2.0",
+    "beancount-reds-importers==1.0.0",
+    "smart-importer==1.2",
+    "fava-investor==1.0.1",
+]
+
+# no package to install: this project only pins software and builds an image
+[tool.uv]
+package = false
